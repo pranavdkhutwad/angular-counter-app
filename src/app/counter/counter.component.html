@@ -1,0 +1,8 @@
+<p class="total-counter">Total {{ getTotal() }}</p>
+<cnt-product
+    (incrementEvt)="handleIncrement($event)"
+    (decrementEvt)="handleDecrement($event)"
+    (deleteEvt)="handleDelete($event)"
+    *ngFor="let p of products"
+    [product]="p"
+></cnt-product>

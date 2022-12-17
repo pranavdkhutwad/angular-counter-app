@@ -8,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
     title: string = 'Counter application';
+
+    currentDate = new Date();
 }

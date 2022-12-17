@@ -1,0 +1,7 @@
+<div class="product" *ngIf="isShow">
+    <div class="product-count-container"><div class="badge product-count">{{product.count || 'zero'}}</div></div>
+    <img class="product-img" [src]="product.imgUrl" alt="product" />
+    <button (click)="handleDecrement()" class="btn btn-danger"><i class="fa fa-minus" aria-hidden="true"></i></button>
+    <button (click)="handleIncrement()" class="btn btn-success"><i class="fa fa-plus" aria-hidden="true"></i></button>
+    <button (click)="handleDelete()" class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i></button>
+</div>
